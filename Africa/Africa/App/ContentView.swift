@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    // MARK: Properties
+    
+    // MARK: Body
     var body: some View {
-        Text("Hello, world!")
+        Text("Content")
             .padding()
     }
 }
@@ -17,5 +20,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 11 Pro")
     }
 }
