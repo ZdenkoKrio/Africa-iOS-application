@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MapView: View {
-    // MARK: Properties
-    
-    // MARK: Body
     var body: some View {
+        // MARK: Properties
+        
+        // MARK: Body
         Text("Map")
     }
 }
