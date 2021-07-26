@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,7 +49,9 @@
 		C8F57E4026A99B1400F2A7A8 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F57E3F26A99B1400F2A7A8 /* MotionAnimationView.swift */; };
 		C8F57E4226AF127F00F2A7A8 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F57E4126AF127F00F2A7A8 /* AnimalGridItemView.swift */; };
 		C8F57E4826AF1C4A00F2A7A8 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F57E4726AF1C4A00F2A7A8 /* Stickers.xcassets */; };
-		C8F57E4C26AF1C4A00F2A7A8 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C8F57E4526AF1C4600F2A7A8 /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C8F57E4C26AF1C4A00F2A7A8 /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C8F57E4526AF1C4600F2A7A8 /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C8F57E5226AF1F2000F2A7A8 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F57E5126AF1F2000F2A7A8 /* CreditsView.swift */; };
+		C8F57E5526AF249800F2A7A8 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F57E5426AF249800F2A7A8 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +125,9 @@
 		C8F57E4526AF1C4600F2A7A8 /* Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Stickers.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8F57E4726AF1C4A00F2A7A8 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		C8F57E4926AF1C4A00F2A7A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8F57E5126AF1F2000F2A7A8 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		C8F57E5426AF249800F2A7A8 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		C8F57E5626AF264600F2A7A8 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,8 @@
 		C8F57DE226A6E0C700F2A7A8 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				C8F57E5626AF264600F2A7A8 /* Africa.entitlements */,
+				C8F57E5326AF243E00F2A7A8 /* Modifier */,
 				C8F57E3826A8BFFC00F2A7A8 /* Utility */,
 				C8F57E1F26A84EC600F2A7A8 /* Extension */,
 				C8F57E1C26A8490B00F2A7A8 /* Model */,
@@ -236,6 +243,7 @@
 				C8F57E3D26A987C300F2A7A8 /* MapAnnotationView.swift */,
 				C8F57E3F26A99B1400F2A7A8 /* MotionAnimationView.swift */,
 				C8F57E4126AF127F00F2A7A8 /* AnimalGridItemView.swift */,
+				C8F57E5126AF1F2000F2A7A8 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +282,14 @@
 				C8F57E4926AF1C4A00F2A7A8 /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		C8F57E5326AF243E00F2A7A8 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C8F57E5426AF249800F2A7A8 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,8 +425,10 @@
 				C8F57E4226AF127F00F2A7A8 /* AnimalGridItemView.swift in Sources */,
 				C8F57E2B26A8703C00F2A7A8 /* InsetGalleryView.swift in Sources */,
 				C8F57E3526A8B49100F2A7A8 /* VideoListItemView.swift in Sources */,
+				C8F57E5226AF1F2000F2A7A8 /* CreditsView.swift in Sources */,
 				C8F57E2126A84EF000F2A7A8 /* CodableBundleExtension.swift in Sources */,
 				C8F57E4026A99B1400F2A7A8 /* MotionAnimationView.swift in Sources */,
+				C8F57E5526AF249800F2A7A8 /* CenterModifier.swift in Sources */,
 				C8F57E2926A86DCE00F2A7A8 /* HeadingView.swift in Sources */,
 				C8F57E3726A8BF2900F2A7A8 /* VideoPlayerView.swift in Sources */,
 			);
@@ -421,6 +439,7 @@
 /* Begin PBXTargetDependency section */
 		C8F57E4B26AF1C4A00F2A7A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C8F57E4426AF1C4600F2A7A8 /* Stickers */;
 			targetProxy = C8F57E4A26AF1C4A00F2A7A8 /* PBXContainerItemProxy */;
 		};
@@ -548,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = FTU2HFGK26;
@@ -560,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZdenoCepan.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,6 +591,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
 				DEVELOPMENT_TEAM = FTU2HFGK26;
@@ -582,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZdenoCepan.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -598,6 +621,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ZdenoCepan.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -613,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ZdenoCepan.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
